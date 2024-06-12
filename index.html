@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED_BOT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div id="left">
+            <div id="menu-bar" class="open-slider"><span class="material-symbols-outlined"></span></div>
+            <div id="new-chart"><span class="material-symbols-outlined">refresh</span></div>
+            <h2 id="logo">MEDBOT</h2>
+        </div>
+        <nav class="navigation">
+            <button id="signup-btn">Sign up</button><span id="and">&</span>
+            <button id="login-btn">Login</button>
+            <div id="nav">
+                <p id="home"><a href="#">Home</a></p>
+                <a href="nutrients.html"><p id="benifits"><a href="#">Benifits</a></p></a>
+                <p id="MedBot"><a href="#">Medbot</a></p>
+            </div>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <span class="icon-close"><span class="material-symbols-outlined">close</span></span>
+        <div class="form-box login" id="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <span class="icon"><span class="material-symbols-outlined"></span></span>
+                    <input type="text" required id="loginUsername">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><span class="material-symbols-outlined"></span></span>
+                    <input type="password" required id="loginPassword">
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box signup"  id="signupbox" style="display: none;">
+            <h2>Sign up</h2>
+            <form id="signupForm">
+                <div class="input-box">
+                    <span class="icon"><span class="material-symbols-outlined"></span></span>
+                    <input type="text" required id="signupUsername">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><span class="material-symbols-outlined"></span></span>
+                    <input type="email" required id="signupEmail">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><span class="material-symbols-outlined"></span></span>
+                    <input type="password" required id="signupPassword">
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Sign up</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <div id="user-input">
+            <input type="text" id="message-input" placeholder="Enter the medical issue...">
+            <button id="send-btn"><span>&#10148;</span></button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <main>
+    <div id="full-details">
+        <section class="back">
+            <section id="home" class="hero">
+               <div class="container">
+                   <h1>Welcome to MedBot</h1>
+                   <p>Your Virtual Health Assistant</p>
+                   <br><br>
+               </div>
+    
+               <div id="med_details">
+                <p><span style="font-weight: 600; font-size: 2em; text-align: center; padding-bottom: 10px; color: rgb(0, 0, 142);">What is MedBot?</span><br>
+                    <span id="span" style=" font-size: 20px; margin-top: 100px; color: rgb(0, 0, 142);">MedBot is a digital marketplace that integrates with your<br> practice EHR. We help physicians sell retail products directly <br>to their patients through our retail platform.</span></p>
+            </div>
+            </section>
+       
+           <!-- Features Section -->
+            <section id="features" class="features">
+               <div class="container">
+                   <h2>Our Features</h2>
+                   <br><br>
+                   <div class="features-grid">
+                    <div class="feature-item">
+                       <h3>24/7 Assistance</h3>
+                       <p>Get health advice and support anytime, anywhere.</p>
+                    </div>
+                    <div class="feature-item">
+                       <h3>Personalized Health Plans</h3>
+                       <p>Receive customized health plans tailored to your needs.</p>
+                    </div>
+                    <div class="feature-item">
+                       <h3>Medication Reminders</h3>
+                       <p>Never miss a dose with our medication reminder feature.</p>
+                    </div>
+                    <div class="feature-item">
+                       <h3>Easy Appointment</h3>
+                       <p>You can book appointment easily for doctors</p>
+                    </div>
+                    <div class="feature-item">
+                       <h3>Symptom Checker</h3>
+                       <p>Users can input their symptoms, and MedBot will analyze the information to suggest possible conditions and recommend next steps.</p></span>
+                    </div>
+                    <div class="feature-item">
+                       <h3>Health Assessment</h3>
+                       <p>Provide basic health assessments and advice based on input symptoms.</p>
+                    </div>
+                   </div>
+               </div>
+            </section>
+
+            <div id="benifits">
+                <div class="benifits-container">
+                    <div class="benifits-item">
+                        <h2>Overall Benefits of Fruits</h2>
+                        <p><span style="font-weight: 900;">Nutrient Density:</span> Fruits are a rich source of essential vitamins and minerals, crucial for overall health and proper body functioning.</p>
+                        <p><span style="font-weight: 900;">Immune Boosting:</span> High in vitamin C and other antioxidants that support immune function and help the body fight off infections.</p>
+                        <p><span style="font-weight: 900;">Hydration:</span> High water content in fruits helps maintain hydration, crucial for all bodily functions and for maintaining energy levels.</p>
+                        <p><span style="font-weight: 900;">Digestive Aid:</span> The fiber content in fruits promotes digestive health and regularity, preventing constipation and supporting a healthy gut microbiome.</p>
+                        <p><span style="font-weight: 900;">Energy Provision:</span> Natural sugars in fruits provide a quick and sustained energy boost, ideal for maintaining energy levels throughout the day.</p>
+                        <p><span style="font-weight: 900;">Anti-Inflammatory:</span> Antioxidants found in fruits help reduce inflammation, which can lower the risk of chronic diseases and support overall health.</p>
+                        <p><span style="font-weight: 900;">Soothing and Gentle:</span> Certain fruits are easy to digest and soothing for symptoms like nausea or sore throat, providing comfort during illness.</p>
+                    </div>
+                    <div class="benifits-item">
+                        <img src="fruits.jpg" alt="Apple Image">
+                    </div>
+                </div>
+                
+                <div class="benifits-container">
+                    <div class="benifits-item">
+                        <img src="vege.jpg" alt="Orange Image">
+                    </div>
+                    
+                    <div class="benifits-item">
+                        <h2>Overall Benefits of Vegetables</h2>
+                        <p><span style="font-weight: 900;">Nutrient Density:</span> Vegetables are a rich source of essential vitamins and minerals, crucial for overall health and proper body functioning.</p>
+
+                        <p><span style="font-weight: 900;">Immune Boosting:</span> Many vegetables, such as leafy greens and cruciferous vegetables, are high in vitamins A, C, and E, which help strengthen the immune system and protect against infections.</p>
+                        <p><span style="font-weight: 900;">Hydration:</span> Vegetables like cucumbers, lettuce, and zucchini have high water content, aiding in maintaining hydration and supporting bodily functions.</p>
+
+                        <p><span style="font-weight: 900;">Digestive Aid:</span> The fiber content in vegetables promotes healthy digestion, helps prevent constipation, and supports a balanced gut microbiome.</p>
+
+                        <p><span style="font-weight: 900;">Energy Provision:</span> Vegetables provide complex carbohydrates and essential nutrients that supply a steady and sustainable energy source, vital for daily activities.</p>
+
+                        <p><span style="font-weight: 900;">Anti-Inflammatory:</span> Antioxidants and phytochemicals in vegetables help reduce inflammation, potentially lowering the risk of chronic diseases and promoting overall health.</p>
+
+
+                    </div>
+
+                </div>
+                
+                <div class="benifits-container">
+                    <div class="benifits-item">
+                        <h2>Overall Benefits of Yoga</h2>
+                        <p><span style="font-weight: 900;">Flexibility and Strength:</span> Yoga improves flexibility and builds muscle strength, enhancing physical performance and reducing the risk of injuries.</p>
+                        <p><span style="font-weight: 900;">Stress Reduction:</span> Practicing yoga helps reduce stress and anxiety through mindful breathing and relaxation techniques.</p>
+                        <p><span style="font-weight: 900;">Improved Posture:</span> Regular yoga practice promotes better posture and alignment, which can alleviate chronic pain and discomfort.</p>
+                        <p><span style="font-weight: 900;">Mental Clarity:</span> Yoga encourages mindfulness and mental focus, contributing to improved concentration and cognitive function.</p>
+                        <p><span style="font-weight: 900;">Overall Well-Being:</span> Combining physical postures, breathing exercises, and meditation, yoga enhances overall well-being and quality of life.</p>
+                        <p><span style="font-weight: 900;">Heart Health:</span> Yoga can lower blood pressure, cholesterol levels, and heart rate, reducing the risk of heart disease.</p>
+                        <p><span style="font-weight: 900;">Community and Connection:</span> Participating in yoga classes provides an opportunity for social interaction and connection with like-minded individuals, fostering a sense of belonging and support.</p>
+                        
+                    </div>
+                    <div class="benifits-item">
+                        <img src="yoga.jpg" alt="banana Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="benifits-container">
+                <div class="benifits-item">
+                    <img src="excercise.jpg" alt="Orange Image">
+                </div>
+                
+                <div class="benifits-item">
+                    <h2>Overall Benefits of Exercise</h2>
+                    <p><span style="font-weight: 900;">Physical Fitness:</span> Regular exercise improves cardiovascular health, strengthens muscles, and enhances flexibility and endurance.</p>
+                    <p><span style="font-weight: 900;">Weight Management:</span> Engaging in physical activities helps maintain a healthy weight and supports weight loss by burning calories.</p>
+                    <p><span style="font-weight: 900;">Mental Health:</span> Exercise releases endorphins, which can boost mood, reduce stress, and alleviate symptoms of depression and anxiety.</p>
+                    <p><span style="font-weight: 900;">Energy Levels:</span> Regular physical activity increases overall energy levels and reduces feelings of fatigue.</p>
+                    <p><span style="font-weight: 900;">Bone Health:</span> Weight-bearing exercises like walking, running, and strength training promote bone density and reduce the risk of osteoporosis.</p>
+                    <p><span style="font-weight: 900;">Heart Health:</span> Regular exercise lowers blood pressure, improves cholesterol levels, and reduces the risk of heart disease and stroke.</p>
+                    <p><span style="font-weight: 900;">Improved Sleep:</span> Regular physical activity can help regulate sleep patterns and improve sleep quality.</p>
+                </div>
+            </div>
+
+
+
+
+            
+           <!-- About Section -->
+            <section id="about" class="about">
+               <div class="container">
+                   <h2>About Us</h2>
+                   <br><br>
+                   <p>MedBot is a cutting-edge virtual assistant designed to provide comprehensive health support and advice. Our mission is to empower individuals with the information and tools they need to manage their health effectively.MedBot represents a significant advancement in digital health technology, aiming to bridge the gap between patients and healthcare providers by offering reliable, accessible, and personalized health support.</p>
+               </div>
+            </section>
+       
+           <!-- Contact Section -->
+            <section id="contact" class="contact">
+               <div class="container">
+                   <h2>Contact Us</h2>
+                   <br><br>
+                   <form action="#">
+                       <div class="form-group">
+                           <label for="name">Name</label>
+                           <input type="text" id="name" name="name" required>
+                       </div>
+                       <div class="form-group">
+                           <label for="email">Email</label>
+                           <input type="email" id="email" name="email" required>
+                       </div>
+                       <div class="form-group">
+                           <label for="message">Message</label>
+                           <textarea id="message" name="message" rows="5" required></textarea>
+                       </div>
+                       <button type="submit" class="btn">Send Message</button>
+                   </form>
+               </div>
+            </section>
+           </section>
+    </div>
+</main>
+
+<!-- *************************************************************************************************** -->
+ 
+       <!-- Footer -->
+        <footer>
+           <div class="container">
+               <p>&copy; 2024 MedBot. All Rights Reserved.</p>
+           </div>
+        </footer>
+   </body>
+</html>
